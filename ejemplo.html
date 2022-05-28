@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3.CSS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		div div {padding:10px; margin-bottom:5px;
+				 border:2px solid #E69DFB;}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+	</script>
+</head>
+
+
+<body class="w3-container">
+
+<h3>Instituto Tecnológico Gustavo A. Madero</h3>
+<h3>Ingeniería en TIC's</h3>
+<h2>Desarrollo de Pila Completa</h2>
+<h1 class="w3-center w3-pink">Frameworks del lado de Servidor</h1>
+
+<h3 class="w3-purple">
+	Nombre del Alumno(a): SAMARA PAOLA DIAZ ARCOS</h3>
+
+
+<div ng-app="">
+	
+  <form>
+    Seleccione Frameworks:
+	<br>
+	<label>Laravel</label>
+	<input type="checkbox" ng-model="myVar1">
+	<br> 
+	<label>CodeIgniter</label>
+	<input type="checkbox" ng-model="myVar2">
+	<br>
+	<label>Symfony</label>
+	<input type="checkbox" ng-model="myVar3">
+	<br>
+	<label>Zend</label>
+	<input type="checkbox" ng-model="myVar4">
+	<br>
+	<label>Phalcon</label>
+	<input type="checkbox" ng-model="myVar5">
+	<br>
+	<label>CakePHP</label>
+	<input type="checkbox" ng-model="myVar6">
+	<br>
+	<label>Yii</label>
+	<input type="checkbox" ng-model="myVar7">
+	<br>
+	<label>FuelPHP</label>
+	<input type="checkbox" ng-model="myVar8">
+	<br> 	
+ 
+
+
+  <div ng-show="myVar1"><h1>Laravel</h1>
+	<p>Laravel es un framework de PHP para ayudarnos en un tipo de desarrollo sobre aplicaciones escritas en este lenguaje de programación. 
+   <br>*Su motor de plantilla, llamado Blade, da numerosas posibilidades para hacer unas páginas visualmente muy potentes y eficaces, capaz de utilizar sus propias variables y reutilizarlas.
+	<br>*Su arquitectura es conocida como MVC (Modelo-Vista-Controlador)
+	<br> *Eloquent ORM, es muy intuitivo para escribir consultas en PHP sobre objetos. Otros framework cuenta con Doctrine por ejemplo, otro tipo de ORM que quizás te podría sonar más que el que usa Laravel.
+	<br> *En seguridad, ofrece un nivel bastante fuerte con mecanismos de hash y salt para encriptar por medio de librerías como BCrypt, que también lo usa por ejemplo Zend Framework.
+	<br>*Librerías y modularidad.
+	<br> *Base de datos y migraciones. Permite actualizar y migrar la base de datos una vez que el desarrollo ya está comenzamos y hay cambios en el código conforme se requiera sin necesidad de borrarla y volverla a crear, gracias a esto el riesgo de perder datos sean del valor que sean es mínimo. Además, gracias a su Schema Builder hace que no requiera usar el SQL, cuenta con un sistema intuitivo en PHP para hacerlo más fácil.
+</p></div><div ng-show="myVar2"><h1>CodeIgniter</h1>
+	<p>“Codeigniter es un potente framework PHP con un pequeña huella que ha sido creada para desarrolladores PHP que necesitan un conjunto de herramientas simples y sofisticadas para crear aplicaciones web con todas las funciones”.
+	<br> *Este framework permite a los desarrolladores web avanzar sus proyectos de una forma más rápida de lo que podrían hacerlo, pues no tienen que escribir el código desde cero. Además, como es un software de código abierto, Codeigniter es asequible, adaptable y accesible.
+	<br> *utiliza una arquitectura Model View Controller (MVC), que en español significa “modelo de vista controlador”.
+	<br> *n un lenguaje sencillo, aquello significa que Codeigniter usa diferentes componentes para controlar tareas de desarrollo específicas.
+	<br> *Las librerías para Codeigniter te permiten realizar las tareas de desarrollo de forma estructurada y en equipo.
+	<br> * El Modelo-Vista-Controlador PHP de Codeigniter te facilita la arquitectura para la creación de aplicaciones escalables
+		</p></div>
+  <div ng-show="myVar3"><h1>Symfony</h1>
+	<p> Symfony es un entorno de trabajo estandarizado (framework PHP) que se utiliza para el desarrollo de aplicaciones web y es de los más utilizados en el entorno de desarrolladores de apps. En otras palabras, es una herramienta para desarrolladores para crear aplicaciones en PHP.
+	<br> *posee una licencia MIT, o lo que es lo mismo que una licencia de software libre permisivo, que se puede utilizar dentro del software del propietario y al no poseer Copywright permite su modificación.
+	<br> *El framework de desarrollo de aplicaciones tiene una gran aceptación y popularidad entre programadores de PHP en Europa, lo que hace que tenga una amplia comunidad que ofrece formación, consultorías y desarrollo de proyectos.
+	<br> *Sus componentes están altamente testeados, tanto como para que Drupal 8 se haya construido con Symfony.
+	<br> *Al poseer una gran comunidad de desarrolladores, garantiza formación continua, además su creador Fabien Potencier es de los más activos en el proyecto en todo el mundo.
+	<br> *Permite crear desde sitios webs sencillos hasta macro proyectos y aplicaciones complejas.	 
+	</p></div>
+  <div ng-show="myVar4"><h1>Zend</h1>
+	<p>La colección de paquetes PHP profesionales integrados en este framework representa una herramienta de gran ayuda que ha llegado a impresionar a los desarrolladores más experimentados. Las funciones básicas se integran rápidamente y sin necesidad de grandes esfuerzos de programación, lo que permite que el usuario se pueda concentrar en la implementación de las funcionalidades de su propia aplicación. 
+	<br> *contiene más de 60 paquetes y, con la ayuda de Composer y de una línea de código simple
+	<br> *Acceso a la base de datos (CRUD)
+	<br> *Almacenamiento en caché
+	<br> *Arquitectura MVC
+	<br> *Autenticación / Administración de usuarios
+	<br> *Zend Framework es compatible con PHP7, quien impulsa la velocidad de carga de las aplicaciones creadas con el framework. Gracias a la gran comunidad de usuarios que proporcionan asistencia con lo respectivo al lenguaje de programación y al entorno de trabajo, en caso de que surjan problemas o preguntas, estarás en muy buenas manos. 
+ </p></div>
+  <div ng-show="myVar5"><h1>Phalcon</h1>
+	<p>es un potente framework PHP. Está implementado como una extensión en el lenguaje C qué ofrece un alto rendimiento y un menor consumo de recursos por cada petición, lo que hace que tenga mayor rapidez.
+<br> *Phalcon se implementa como una extensión escrito en C con el fin de optimizar el rendimiento. Con ello se pretende aumentar la velocidad de ejecución y reducir el uso de recursos con el objetivo de manejar más solicitudes por segundo que los marcos comparables escritas principalmente en PHP.
+<br> *Puede descargar en la siguiente dirección la versión de Phalcon que desee, y una vez descargado, podrá instalar la misma.
+URL de descarga: https://phalconphp.com/es/download
+
+<br> *Phalcon es un framework completo, sencillo de utilizar y extremadamente rápido, cosa no fácil de conseguir. Este framework se puede instalar en los sistemas operativos: Windows, Linux, Unix y Mac. A continuación se explica cada uno de los pasos para realizar dicha instalación en los diferentes sistemas operativos.
+<br> *Los componente debajo del espacio de nombres Phalcon\Db son los responsables de potenciar la clase Phalcon\Mvc\Model - el Modelo en MVC para el framework. Consiste en una capa de abstracción independiente de alto nivel para sistemas de base de datos escrita completamente en C.
+<br> *Es el sistema de gestión de bases de datos relacionales (RDBMS) más utilizado en el mundo que se ejecuta como un servidor que provee acceso multiusuario a un número de bases de datos
+<br> *Los adaptadores Phalcon\Db proporcionan varios métodos para consultar filas desde tablas. En este caso se necesita la sintaxis SQL especifica para el motor de base de datos destino
+<br> *s un marco de código abierto con licencia bajo los términos de la Licencia BSD
+	 </p></div>
+  <div ng-show="myVar6"><h1>CakePHP</h1>
+	<p> Este framework con nombre tan peculiar, es un área de desarrollo [framework] veloz de PHP, gratuito, de código abierto u open source. No es más que un contenido base que usan los desarrolladores o developers para que puedan diseñar páginas web de todo tipo. 
+		<br> *La clave principal es dar un entorno de trabajo simple y agil, estructurado, organizado y  rápido, obteniendo de esta manera agilidad en el trabajo que se realiza.
+		<br> *CakePHP tiene un developers team que lo desarrolla y una comunidad web que aporta gran cantidad de novedades e iniciativas, lo que hace que esté generando constantemente valor añadido a lo que hacen los desarrolladores. 
+		<br> *Es código abierto, licencia open source
+		<br> *Base de datos y CRUD integrados, facilitando su interacción.
+		<br> *Formularios veloces y muyflexibles (sintaxis de PHP, con ayudantes[helpers])
+		<br> *Despachador de peticiones [dispatcher], con URLs y rutas personalizadas y limpias
+	</p></div>
+  <div ng-show="myVar7"><h1>Yii</h1>
+	<p>Yii es un framework PHP basado en componentes de alta performance para desarrollar aplicaciones Web de gran escala. El mismo permite la máxima reutilización en la programación web y puede acelerar el proceso de desarrollo.
+	<br> *Yii es un framework genérico de programación web, lo que significa que se puede utilizar para desarrollar todo tipo de aplicaciones web en PHP
+	<br> *Como la mayoría de los framework de PHP, Yii implementa el patrón de diseño MVC (Modelo-Vista-Controlador) y promueve la organización de código basada en este patrón.
+	<br> *La filosofía de Yii consiste en escribir el código de manera simple y elegante, sin sobrediseñar nunca por el mero hecho de seguir un patrón de diseño determinado.
+	<br> *Yii es un framework completo (full stack) que provee muchas características probadas y listas para usar, como los constructores de consultas y la clase ActiveRecord para las bases de datos relacionales y NoSQL, la compatibilidad con la arquitectura REST para desarrollar API, la compatibilidad de caché en varios niveles y muchas más.
+	<br> *Yii es extremadamente extensible. Puedes personalizar o reemplazar prácticamente cualquier pieza de código de base, como se puede también aprovechar su sólida arquitectura de extensiones para utilizar o desarrollar extensiones distribuibles
+	<br> *El alto rendimiento es siempre la meta principal de Yii.
+	<br> *Actualmente existen dos versiones principales de Yii: la versión 1.1 y la versión 2.0. Para la versión 1.1, que es de la generación anterior, actualmente solo se ofrece mantenimiento.
+	</p></div>
+		<div ng-show="myVar8"><h1>FuelPHP</h1>
+	<p>es un simple y flexible framework de código abierto para el desarrollo web escrito en PHP, basado en las mejores ideas de otros framework, el cual implementa el patrón HMVC y tomando las mejores ideas de otros frameworks para crear una herramienta que no solo haga la vida más fácil sino que también permita hacerlo de una forma cómoda y eficiente.
+<br> *Ampliable y Modular
+<br> *FuelPHP apoya la prevención CSRF con tokens, filtrado de entrada y el generador de consultas le ayudarán a prevenir los ataques de inyección SQL. 
+<br> *Entrada de filtrado.
+<br> *Prevención de inyección SQL.
+<br> *Prevención de inyección SQL.
+<br> *Interfaz por defecto para cualquier biblioteca de autenticación en FuelPHP.
+<br> *El ORM FuelPHP fue diseñado para establecer un equilibrio entre las características de gran alcance sin dejar de ser ligero. Ofrece un enfoque orientado a objetos para trabajar con la base de datos, realizar las operaciones CRUD y gestionar las relaciones entre tablas.
+<br> *Incluye autenticación simple para usuarios, grupos y ACL básico.
+	</p></div>
+	
+<!----	</div>
+</div>
+<div ng-app=""> -->
+ <h1 class="w3-center w3-aqua">Frameworks del lado del Cliente</h1>
+ <form>
+    Seleccione Frameworks:
+	<br>
+	<label>React JS</label>
+	<input type="checkbox" ng-model="myVar11">
+	<br>
+    <label>Vue JS</label>
+	<input type="checkbox" ng-model="myVar13">
+    <br>
+    <label>Angular JS</label>
+	<input type="checkbox" ng-model="myVar14">
+    <br>
+    <label>Ember JS</label>
+	<input type="checkbox" ng-model="myVar15">
+    <br>
+    <label>Vanilla js</label>
+	<input type="checkbox" ng-model="myVar16">
+	<br>
+    <label>Backbone js</label>
+	<input type="checkbox" ng-model="myVar17">
+
+
+  <div ng-show="myVar11"><h1>React JS</h1>
+	<p>Es una librería open source de JavaScript para desarrollar interfaces de usuario. Fue lanzada en el año 2013 y desarrollada por Facebook, quienes también la mantienen actualmente junto a una comunidad de desarrolladores independientes y compañías.
+   <br>*React para el desarrollo de sus aplicaciones, y es que entre ellas podemos encontrar Facebook, Instagram y el cliente web de WhastApp (todas propiedad de Facebook), y otras como AirBnb, Uber, Netflix, Twitter, Reddit o Paypal.
+	<br>*El elemento más importante de React es el componente, que es, en esencia, una pieza de la interfaz de usuario. Como norma general, al diseñar una aplicación con React, lo que estamos haciendo es crear componentes independientes y reusables para, poco a poco, crear interfaces de usuario más complejas.
+	<br> *El estado (state) son los datos con los que queremos trabajar e incluso mostrar cuando el componente se renderiza. El método “render”, por otro lado, es responsable de describir cómo se tiene que ver dicho componente.
+</p></div>
+<div ng-show="myVar12"><h1>Vue JS</h1>
+	<p>Vue (pronunciado /vjuː/, como view) es un framework progresivo para construir interfaces de usuario. A diferencia de otros frameworks monolíticos, Vue está diseñado desde cero para ser utilizado incrementalmente. 
+   <br>*La librería central está enfocada solo en la capa de visualización, y es fácil de utilizar e integrar con otras librerías o proyectos existentes. Por otro lado, Vue también es perfectamente capaz de impulsar sofisticadas Single-Page Applications cuando se utiliza en combinación con herramientas modernas y librerías de apoyo.
+	<br> * la directiva v-model que hace que el enlace bidireccional entre los controles de los formularios y el estado de la aplicación sea muy sencilla
+</p></div>
+<div ng-show="myVar13"><h1>Angular JS</h1>
+	<p>AgularJS es un framework MVC (Modelo Vista Controlador), desarrollado por Google para el Desarrollo Web Front End que permite crear aplicaciones SPA (Single-Page Applications) sin despeinarnos
+	<br> *  la piedra filosofal que integra una solución completa frente a otras opciones como jQuery, Knockout, Handlebars o PagerJs —librerías orientadas a resolver un problema concreto, pero no proporcionan una solución global para desarrollar aplicaciones— que nos permite prescindir del vetusto PHP en nuestros desarrollos usando una tecnología moderna, en constante evolución y actualización, con la que podemos habilitar servicios web y construir nuestro software mediante una conexión con servidor dinámica, databinding, organizar sus componentes en módulos y modificar el DOM sin tener que remover de forma extrema el fichero HTML y el patrón MVVM.
+</p></div>
+<div ng-show="myVar14"><h1>Ember JS</h1>
+	<p>EmberJS y su marco de aplicación. Se trata de un framework front-end orientado al desarrollo de proyectos de modo ágil y productivo y que puedan ser mantenidos a largo plazo como por ejemplo aplicaciones web o móviles. EmberJS se encuentra licenciado bajo una licencia de código abierto, lo que significa que cuenta con un ecosistema de herramientas que se extienden más allá de lo imaginable gracias al aporte de muchas personas.
+   <br>*EmberJS es una librería muy similar a las otras que hemos discutido y que también se integra con Handlebars para esquematizar el marcado, un lenguaje de plantillas para construir páginas estáticas, muy parecido a Jekyll que puede serte familiar, y así usar JavaScript para implementar un comportamiento personalizado para los diferentes componentes.
+	<br> * Podemos ver una lista de algunas compañías famosas que usan Ember.js desde su página oficial. Algunos gigantes en la lista son:
+
+	Microsoft
+	LinkedIn
+	TED
+	Netflix
+	Heroku
+	Bustle
+	Square
+</p></div>
+<div ng-show="myVar15"><h1>Vailla JS</h1>
+	<p>Vanilla JS actualmente es el framework más usado en Internet, siendo usado por Google, Amazon, Twitter y muchas otras webs, incluida Xitrus.
+		A la hora de acceder al DOM por IDs es el doble de rápido que Dojo y 100 veces más rápido que Prototype JS cuando accedemos a los elementos por el nombre de la etiqueta, siendo estos unos de los framework más eficiente en cuanto a acceder al DOM, solo superado por Vanilla JS.
+   <br>*Las funciones nativas de JavaScript son potentísimas, ya que se ejecutan a un nivel más bajo que el de JavaScript y eso les proporciona mayor velocidad a la hora de analizar los nodos de una web y seleccionarlos de la forma correcta.
+   Con este artículo quiero que se sepa que se puede hacer de todo sin los típicos frameworks y que debemos de pensar más en la eficiencia de una web, ya que para ejecutar una simple acción 100 o 200 veces más lento se nota cuando se realiza muchas veces y puede disminuir la experiencia de usuario.
+</p></div>
+<div ng-show="myVar16"><h1>Backbone JS</h1>
+	<p>Backbone se trata de un framework muy indicado para desarrollar nuestras propias aplicaciones de una sola página, aunque también resulta útil para proyectos multipágina en donde necesitaremos una interfaz de usuario más avanzada. Entre sus ventajas, facilita la ordenación del código y la sincronización de las vistas con los datos de la aplicación, facilitar el trabajo con datos, vistas para producir nuestro HTML, las interacciones para implementar comportamientos que debe realizar frente a acciones del usuario y los servicios para comunicar con cualquier tecnología que usemos del lado del servidor, ya sea NodeJS, PHP, Ruby, .NET, etc.
+	<br> * Componentes centrales: Modelo, Vista, Colección y Controlador.
+	Comunicación dirigida por eventos entre la capa Vista y Modelo. Ofrece a los desarrolladores un control detallado sobre los cambios que se produzcan en la Vista.
+	Admite enlaces de datos a través de eventos manuales o una mediante el uso de una biblioteca separada para la observación de valores clave (KVO).
+	Compatibilidad con interfaces RESTful listas para usar, por lo que los modelos se pueden vincular fácilmente a un back-end.
+	Los prototipos se instancian con el uso de una palabra clave.
+	La microplantilla Underscore se encuentra disponible por defecto.
+	Convenciones claras y flexibles para estructurar aplicaciones. Backbone no fuerza el uso de todos sus componentes y podemos trabajar sólo con aquellos que sean necesarios.
+</p></div>
+
+</div>
+</body></form>
+
+<a class="w3-purple"
+href=
+"https://www.w3schools.com/angular/tryit.asp?filename=try_ng_form_checkbox">
+Fuente de información: <strong>w3schools</strong>
+</a>
+</body>
+</html>
